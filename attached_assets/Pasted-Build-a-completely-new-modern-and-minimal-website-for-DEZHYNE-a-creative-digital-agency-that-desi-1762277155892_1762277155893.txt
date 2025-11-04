@@ -1,0 +1,296 @@
+Build a completely new, modern, and minimal website for DEZHYNE, a creative digital agency that designs and develops premium online experiences.
+
+The website should feel fresh, high-end, and tech-driven, inspired by Zerocac, WeThinkElastic, and Schbang — combining clean whitespace with bold typography, smooth animations, and a storytelling flow.
+
+This is a complete redesign from scratch, not a theme reskin. Rebuild every page structure, section hierarchy, and animation.
+
+Goal: To position DEZHYNE as a next-generation creative and tech studio offering branding, development, and marketing solutions to businesses.
+
+🎨 Design System
+
+Theme: White background with soft pastel gradients (light gray, beige, or cream tones).
+
+Typography: Bold, modern sans-serif (Poppins, Inter, or Satoshi).
+
+Logo: Use provided Dezhyne logo (slightly larger, black on white).
+
+Colors: Black text, pastel highlights (blue, peach, lilac).
+
+Layout: Wide spacing, clean grid, strong visual hierarchy.
+
+Animations: Smooth GSAP / Framer-style fades, scroll-triggered reveals, hover transitions, subtle parallax.
+
+Imagery: Unique, non-repeated images and mockups — clean, professional, and light-toned.
+
+🌐 NAVBAR + GLOBAL ELEMENTS
+
+Navbar
+
+White sticky navbar.
+
+Center-align navigation items.
+
+Logo on the far left (30% larger).
+
+Links: Home | Services | Portfolio | Blogs | Contact.
+
+Right side: “Let’s Talk” rounded button (pastel highlight).
+
+Hover underline animation.
+
+Remove “Privacy Policy” from navbar.
+
+Footer
+
+Background: soft beige or light cream.
+
+Large heading: “Let’s start something great together.”
+
+CTA button: “Let’s Talk.”
+
+Social icons on right: Instagram, LinkedIn, Mail, Call.
+
+Newsletter field.
+
+Small “Privacy Policy” link at the very bottom-right corner.
+
+🏠 HOME PAGE
+
+Inspiration: WeThinkElastic (for hero section), Zerocac (for structure), Schbang (for color balance).
+
+Sections:
+
+Hero Section
+
+Full white background with soft gradient waves.
+
+Replace static hero with a video montage of works/projects (light aesthetic).
+
+Headline:
+
+“Crafting the Future of Digital Experiences.”
+
+Subtext:
+
+“We turn ideas into stunning digital realities through innovative design and technology.”
+
+CTA: “Get Started” (rounded button with arrow icon).
+
+Include smooth scroll fade animation.
+
+Trusted by Brands
+
+Row of 5–6 grayscale client logos that turn colored on hover.
+
+Our Services
+
+Clean 3x2 grid (six service cards).
+
+Each with icon, title, short description.
+
+Hover animation: lift + shadow glow.
+
+Services:
+
+Website Development
+
+E-commerce Development
+
+Branding & Strategy
+
+Paid Media
+
+Social Media Marketing
+
+Software Testing
+
+Our Work
+
+Inspired by WeThinkElastic layout.
+
+Two-column grid of work thumbnails or embedded looping videos.
+
+Each with project name and description on hover.
+
+Add light border, white background.
+
+Section title: “We Are The Team — We Think Elastic.”
+
+Our Approach
+
+Vertical step-based animation section.
+
+Steps:
+
+Discovery & Strategy
+
+Design & Creative
+
+Development & Testing
+
+Launch & Growth
+
+Include animated logo element as timeline marker.
+
+Blog Preview
+
+3 colorful creative cards inspired by Schbang.
+
+Gradient banners, titles, read time, and CTA “View Post.”
+
+Call to Action
+
+“Let’s Build Something Great Together.”
+
+Button: “Let’s Talk.”
+
+Simple, clean background transition.
+
+⚙️ SERVICES PAGE
+
+Inspiration: Schbang + Praella + Shopify Experts
+
+Layout:
+
+Hero Section
+
+Tagline: “Digital Solutions for the Modern Brand.”
+
+Subtext: “From design to deployment — we create, optimize, and scale.”
+
+Background: white with accent underline.
+
+Categories Navigation
+
+Tabs for: Brand Solutions | Tech Solutions | Media Solutions.
+
+Each opens respective service groups below.
+
+Brand Solutions Section
+
+Two-column layout with image and content alternating.
+
+Services: Brand Naming, Positioning, Creative Strategy.
+
+Tech & E-commerce
+
+Hero-style banner (Shopify Experts reference).
+
+“Creating scalable D2C and B2B solutions globally.”
+
+Display sample website templates grid.
+
+Media & Marketing
+
+Horizontal scroll carousel with creative banners (Praella reference).
+
+Include Paid Media, Social Ads, Growth Strategy.
+
+CTA
+
+“Let’s Elevate Your Brand.” with pastel button.
+
+💼 PORTFOLIO PAGE
+
+Hero Title:
+“Our Work — Creative Strategy Meets Real Impact.”
+
+Grid Layout:
+
+3-column grid (light cards).
+
+Projects show image/video thumbnail, title, category tag.
+
+Hover overlay with “View Case Study.”
+
+Filters:
+
+All | Branding | E-commerce | Tech | UI/UX.
+
+Interaction:
+
+Smooth hover effects, subtle fade-ins, rounded corners.
+
+📰 BLOGS PAGE
+
+Inspiration: Schbang Blogs
+
+Hero Section:
+
+Title: “Insights & Ideas That Drive Change.”
+
+Subtitle: “Discover the latest in design, marketing, and technology.”
+
+Blog Grid:
+
+3 colorful creative cards per row.
+
+Bright gradients (green, purple, orange).
+
+Each card: Image, Title, Short description, Read time.
+
+Hover effect: image zoom + text shift.
+
+Individual Blog Page:
+
+Header image + full article.
+
+Include author, published date, social share icons.
+
+❓ FAQ PAGE
+
+Accordion layout with white background.
+
+Sections: General, Services, Process, Pricing, Support.
+
+Clean typography, hover expand animation.
+
+End with CTA:
+
+“Still have questions? Let’s Talk.”
+
+📞 CONTACT PAGE
+
+Inspiration: Zerocac Contact Page
+
+Hero Title:
+“Drop Us a Message.”
+Subtext: “We’re excited to work with you. Please share your details and we’ll respond within 2 business days.”
+
+Form:
+
+Inputs: Name, Email, Phone, Message.
+
+Underline-only style (no boxes).
+
+Submit button: “Send Message.”
+
+Contact Info Row:
+
+Address | Hours | Phone | Email | “View on Google Maps.”
+
+Minimal icons, simple text layout.
+
+Footer:
+
+Same as homepage with newsletter + privacy policy link.
+
+⚡ TECHNICAL SPECIFICATIONS
+
+Fully responsive grid design.
+
+Smooth scroll & transition animations.
+
+No repeated images.
+
+Optimized for SEO and load performance.
+
+Each page unique but visually consistent.
+
+Focus on modern visual storytelling and clarity.
+
+🪄 Final Creative Direction
+
+Build it like a premium creative agency portfolio — clean, confident, cinematic in motion, minimalist in style.
+Every section should tell a story visually and emotionally.
+It should make visitors immediately feel trust, creativity, and innovation.
