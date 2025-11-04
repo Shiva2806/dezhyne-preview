@@ -11,6 +11,7 @@ import Portfolio from "@/pages/Portfolio";
 import Blogs from "@/pages/Blogs";
 import Contact from "@/pages/Contact";
 import FAQ from "@/pages/FAQ";
+import Privacy from "@/pages/Privacy";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -25,6 +26,7 @@ function Router() {
           <Route path="/blogs" component={Blogs} />
           <Route path="/contact" component={Contact} />
           <Route path="/faq" component={FAQ} />
+          <Route path="/privacy" component={Privacy} />
           <Route component={NotFound} />
         </Switch>
       </main>

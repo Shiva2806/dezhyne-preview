@@ -4,7 +4,7 @@ import PortfolioCard from "@/components/PortfolioCard";
 import BlogCard from "@/components/BlogCard";
 import ApproachStep from "@/components/ApproachStep";
 import ClientLogo from "@/components/ClientLogo";
-import { ArrowRight, Globe, ShoppingCart, Palette, TrendingUp, Share2, Bug } from "lucide-react";
+import { ArrowRight, Globe, ShoppingCart, Palette, TrendingUp, Share2, Bug, Boxes, Zap, Layers, Sparkles, Circle, Hexagon } from "lucide-react";
 import heroGradient from "@assets/generated_images/Hero_gradient_background_607a5597.png";
 import portfolioImg1 from "@assets/generated_images/Website_development_portfolio_mockup_4346f8d4.png";
 import portfolioImg2 from "@assets/generated_images/E-commerce_platform_showcase_344af99a.png";
@@ -102,15 +102,10 @@ export default function Home() {
   return (
     <div className="min-h-screen" data-testid="page-home">
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{
-          backgroundImage: `url(${heroGradient})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 animate-gradient"
         data-testid="section-hero"
       >
-        <div className="absolute inset-0 bg-white/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-transparent to-white/40" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 text-center py-32">
           <h1
             className="text-5xl md:text-7xl font-bold mb-6 animate-in fade-in slide-in-from-bottom-4 duration-1000"
@@ -139,23 +134,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-white" data-testid="section-trusted-brands">
+      <section className="py-20 bg-gradient-to-b from-white to-purple-50/20" data-testid="section-trusted-brands">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <p className="text-center text-sm font-medium text-muted-foreground mb-12" data-testid="text-trusted-by">
             TRUSTED BY LEADING BRANDS
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            <ClientLogo name="TechCorp" logoText="TECHCORP" />
-            <ClientLogo name="Innovate" logoText="INNOVATE" />
-            <ClientLogo name="Digital" logoText="DIGITAL+" />
-            <ClientLogo name="Future" logoText="FUTURE" />
-            <ClientLogo name="Nexus" logoText="NEXUS" />
-            <ClientLogo name="Vertex" logoText="VERTEX" />
+            <ClientLogo name="Adobe" icon={Layers} color="#FF0000" />
+            <ClientLogo name="Figma" icon={Circle} color="#F24E1E" />
+            <ClientLogo name="Shopify" icon={ShoppingCart} color="#95BF47" />
+            <ClientLogo name="Spotify" icon={Sparkles} color="#1DB954" />
+            <ClientLogo name="Airbnb" icon={Hexagon} color="#FF5A5F" />
+            <ClientLogo name="Stripe" icon={Zap} color="#635BFF" />
           </div>
         </div>
       </section>
 
-      <section className="py-32 bg-muted/30" data-testid="section-services">
+      <section className="py-32 bg-gradient-to-b from-purple-50/20 to-blue-50/30" data-testid="section-services">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4" data-testid="text-services-heading">
@@ -203,7 +198,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-32 bg-muted/30" data-testid="section-approach">
+      <section className="py-32 bg-gradient-to-b from-blue-50/30 to-pink-50/20" data-testid="section-approach">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold mb-4" data-testid="text-approach-heading">
@@ -269,25 +264,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-32 bg-gradient-to-br from-primary/10 to-accent/10" data-testid="section-cta">
-        <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-cta-heading">
-            Let's Build Something Great Together.
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8" data-testid="text-cta-subtext">
-            Ready to transform your digital presence?
-          </p>
-          <Button
-            size="lg"
-            className="rounded-full bg-foreground text-background hover-elevate px-8"
-            data-testid="button-cta-lets-talk"
-            onClick={() => (window.location.href = "/contact")}
-          >
-            Let's Talk
-            <ArrowRight className="ml-2" size={20} />
-          </Button>
-        </div>
-      </section>
     </div>
   );
 }

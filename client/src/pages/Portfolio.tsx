@@ -72,7 +72,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section className="py-12 bg-muted/30" data-testid="section-filters">
+      <section className="py-12 bg-gradient-to-b from-purple-50/30 to-blue-50/20" data-testid="section-filters">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex flex-wrap justify-center gap-3">
             {filters.map((filter) => (

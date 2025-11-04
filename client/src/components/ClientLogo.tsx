@@ -2,10 +2,11 @@ import { useState } from "react";
 
 interface ClientLogoProps {
   name: string;
-  logoText: string;
+  icon: React.ComponentType<any>;
+  color?: string;
 }
 
-export default function ClientLogo({ name, logoText }: ClientLogoProps) {
+export default function ClientLogo({ name, icon: Icon, color = "#3B82F6" }: ClientLogoProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -15,14 +16,15 @@ export default function ClientLogo({ name, logoText }: ClientLogoProps) {
       onMouseLeave={() => setIsHovered(false)}
       data-testid={`logo-${name.toLowerCase()}`}
     >
-      <div
-        className={`text-2xl font-bold transition-all duration-300 ${
-          isHovered ? "text-foreground scale-110" : "text-muted-foreground/40"
+      <Icon
+        size={48}
+        className={`transition-all duration-300 ${
+          isHovered ? "scale-110" : ""
         }`}
-        data-testid="text-logo"
-      >
-        {logoText}
-      </div>
+        style={{
+          color: isHovered ? color : "#9CA3AF",
+        }}
+      />
     </div>
   );
 }

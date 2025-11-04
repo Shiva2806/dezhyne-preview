@@ -38,7 +38,8 @@ export default function Navbar() {
             <img
               src={dezhyneLogo}
               alt="DEZHYNE"
-              className="h-8 w-auto cursor-pointer"
+              className="h-12 w-auto cursor-pointer"
+              style={{ filter: 'brightness(0)' }}
               data-testid="img-logo"
             />
           </Link>
@@ -72,7 +73,7 @@ export default function Navbar() {
 
           <div className="flex items-center gap-4">
             <Button
-              className="hidden md:inline-flex rounded-full bg-primary text-primary-foreground hover-elevate"
+              className="hidden md:inline-flex rounded-full bg-gradient-to-r from-primary to-accent text-foreground hover-elevate transition-all duration-300 hover:shadow-lg"
               data-testid="button-lets-talk"
               onClick={() => (window.location.href = "/contact")}
             >

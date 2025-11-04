@@ -38,123 +38,118 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="py-20 bg-muted/30" data-testid="section-form">
-        <div className="max-w-3xl mx-auto px-6 lg:px-12">
-          <form onSubmit={handleSubmit} className="space-y-8">
+      <section className="py-20 bg-gradient-to-b from-blue-50/30 to-purple-50/30" data-testid="section-form">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
+          <div className="grid md:grid-cols-2 gap-16">
             <div>
-              <Input
-                type="text"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
-                required
-                className="border-0 border-b rounded-none px-0 focus-visible:ring-0 focus-visible:border-foreground"
-                data-testid="input-name"
-              />
+              <form onSubmit={handleSubmit} className="space-y-10">
+                <div>
+                  <Input
+                    type="text"
+                    placeholder="Your Name"
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
+                    required
+                    className="border-0 border-b-2 border-border rounded-none px-0 py-3 text-lg focus-visible:ring-0 focus-visible:border-foreground bg-transparent transition-all"
+                    data-testid="input-name"
+                  />
+                </div>
+                <div>
+                  <Input
+                    type="email"
+                    placeholder="Email Address"
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
+                    required
+                    className="border-0 border-b-2 border-border rounded-none px-0 py-3 text-lg focus-visible:ring-0 focus-visible:border-foreground bg-transparent transition-all"
+                    data-testid="input-email"
+                  />
+                </div>
+                <div>
+                  <Input
+                    type="tel"
+                    placeholder="Phone Number"
+                    value={formData.phone}
+                    onChange={(e) =>
+                      setFormData({ ...formData, phone: e.target.value })
+                    }
+                    className="border-0 border-b-2 border-border rounded-none px-0 py-3 text-lg focus-visible:ring-0 focus-visible:border-foreground bg-transparent transition-all"
+                    data-testid="input-phone"
+                  />
+                </div>
+                <div>
+                  <Textarea
+                    placeholder="Tell us about your project"
+                    value={formData.message}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
+                    required
+                    rows={6}
+                    className="border-0 border-b-2 border-border rounded-none px-0 py-3 text-lg focus-visible:ring-0 focus-visible:border-foreground resize-none bg-transparent transition-all"
+                    data-testid="input-message"
+                  />
+                </div>
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="rounded-full bg-gradient-to-r from-foreground to-foreground/80 text-background hover-elevate px-12 hover:shadow-xl transition-all"
+                  data-testid="button-send-message"
+                >
+                  Send Message
+                </Button>
+              </form>
             </div>
-            <div>
-              <Input
-                type="email"
-                placeholder="Email Address"
-                value={formData.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
-                required
-                className="border-0 border-b rounded-none px-0 focus-visible:ring-0 focus-visible:border-foreground"
-                data-testid="input-email"
-              />
+            <div className="bg-white/60 backdrop-blur-sm rounded-md p-8 space-y-6">
+              <div>
+                <h3 className="font-bold text-lg mb-2">Address</h3>
+                <p className="text-muted-foreground">
+                  123 Creative Street<br />
+                  San Francisco, CA 94103
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-2">Hours</h3>
+                <p className="text-muted-foreground">
+                  Mon - Fri: 9AM - 6PM<br />
+                  Sat - Sun: Closed
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-2">Phone</h3>
+                <p className="text-muted-foreground">
+                  +1 (555) 123-4567<br />
+                  +1 (555) 987-6543
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-2">Email</h3>
+                <p className="text-muted-foreground">
+                  hello@dezhyne.com<br />
+                  info@dezhyne.com
+                </p>
+              </div>
             </div>
-            <div>
-              <Input
-                type="tel"
-                placeholder="Phone Number"
-                value={formData.phone}
-                onChange={(e) =>
-                  setFormData({ ...formData, phone: e.target.value })
-                }
-                className="border-0 border-b rounded-none px-0 focus-visible:ring-0 focus-visible:border-foreground"
-                data-testid="input-phone"
-              />
-            </div>
-            <div>
-              <Textarea
-                placeholder="Tell us about your project"
-                value={formData.message}
-                onChange={(e) =>
-                  setFormData({ ...formData, message: e.target.value })
-                }
-                required
-                rows={6}
-                className="border-0 border-b rounded-none px-0 focus-visible:ring-0 focus-visible:border-foreground resize-none"
-                data-testid="input-message"
-              />
-            </div>
-            <Button
-              type="submit"
-              size="lg"
-              className="rounded-full bg-foreground text-background hover-elevate px-12"
-              data-testid="button-send-message"
-            >
-              Send Message
-            </Button>
-          </form>
+          </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white" data-testid="section-contact-info">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center" data-testid="info-address">
-              <MapPin className="mx-auto mb-4 text-primary" size={32} />
-              <h3 className="font-bold mb-2">Address</h3>
-              <p className="text-muted-foreground text-sm">
-                123 Creative Street
-                <br />
-                San Francisco, CA 94103
-              </p>
-            </div>
-            <div className="text-center" data-testid="info-hours">
-              <Clock className="mx-auto mb-4 text-primary" size={32} />
-              <h3 className="font-bold mb-2">Hours</h3>
-              <p className="text-muted-foreground text-sm">
-                Mon - Fri: 9AM - 6PM
-                <br />
-                Sat - Sun: Closed
-              </p>
-            </div>
-            <div className="text-center" data-testid="info-phone">
-              <Phone className="mx-auto mb-4 text-primary" size={32} />
-              <h3 className="font-bold mb-2">Phone</h3>
-              <p className="text-muted-foreground text-sm">
-                +1 (555) 123-4567
-                <br />
-                +1 (555) 987-6543
-              </p>
-            </div>
-            <div className="text-center" data-testid="info-email">
-              <Mail className="mx-auto mb-4 text-primary" size={32} />
-              <h3 className="font-bold mb-2">Email</h3>
-              <p className="text-muted-foreground text-sm">
-                hello@dezhyne.com
-                <br />
-                info@dezhyne.com
-              </p>
-            </div>
-          </div>
-          <div className="text-center mt-12">
-            <a
-              href="https://maps.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary font-medium hover:underline"
-              data-testid="link-google-maps"
-            >
-              View on Google Maps →
-            </a>
-          </div>
+      <section className="py-12 bg-white" data-testid="section-contact-info">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 text-center">
+          <a
+            href="https://maps.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary font-medium hover:underline inline-flex items-center gap-2"
+            data-testid="link-google-maps"
+          >
+            <MapPin size={20} />
+            View on Google Maps
+          </a>
         </div>
       </section>
     </div>

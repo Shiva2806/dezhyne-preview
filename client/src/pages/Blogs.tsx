@@ -73,7 +73,7 @@ export default function Blogs() {
         </div>
       </section>
 
-      <section className="py-32 bg-muted/30" data-testid="section-blog-grid">
+      <section className="py-32 bg-gradient-to-b from-purple-50/30 to-pink-50/20" data-testid="section-blog-grid">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (

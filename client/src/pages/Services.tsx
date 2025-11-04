@@ -92,7 +92,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="py-12 bg-muted/30 sticky top-20 z-40" data-testid="section-tabs">
+      <section className="py-12 bg-gradient-to-b from-purple-50/50 to-blue-50/30" data-testid="section-tabs">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex justify-center gap-4">
             <Button
@@ -126,7 +126,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="py-32 bg-white" data-testid="section-services">
+      <section className="py-32 bg-gradient-to-b from-blue-50/30 to-pink-50/20" data-testid="section-services">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="space-y-20">
             {getCurrentServices().map((service, index) => (
@@ -160,7 +160,7 @@ export default function Services() {
       </section>
 
       {activeTab === "tech" && (
-        <section className="py-32 bg-gradient-to-br from-primary/10 to-accent/10" data-testid="section-tech-showcase">
+        <section className="py-32 bg-gradient-to-br from-purple-50/50 to-blue-50/50" data-testid="section-tech-showcase">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-tech-heading">
               Creating scalable D2C and B2B solutions globally

@@ -89,7 +89,7 @@ export default function FAQ() {
         </div>
       </section>
 
-      <section className="py-20 bg-muted/30" data-testid="section-faq">
+      <section className="py-20 bg-gradient-to-b from-blue-50/30 to-purple-50/20" data-testid="section-faq">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
           {faqCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="mb-12" data-testid={`category-${category.category.toLowerCase()}`}>
